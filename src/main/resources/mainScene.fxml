@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Scene?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Scene fx:id="mainScene" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="571.0" prefWidth="1064.0">
+      <children>
+         <Canvas height="594.0" layoutX="-16.0" layoutY="-11.0" width="1036.0" />
+         <ButtonBar fx:id="taskBar" layoutX="168.0" layoutY="4.0" prefHeight="40.0" prefWidth="892.0">
+           <buttons>
+               <RadioButton fx:id="theme1" mnemonicParsing="false" text="Theme 1">
+                  <toggleGroup>
+                     <ToggleGroup fx:id="theme" />
+                  </toggleGroup></RadioButton>
+               <RadioButton fx:id="theme2" mnemonicParsing="false" text="Theme 2" toggleGroup="$theme" />
+               <RadioButton fx:id="theme3" mnemonicParsing="false" text="Theme 3" toggleGroup="$theme" />
+               <Button fx:id="newNoteButton" mnemonicParsing="false" text="+ Note" />
+               <Button fx:id="newQuoteButton" mnemonicParsing="false" text="+ Quote" />
+               <Button fx:id="taskButton" mnemonicParsing="false" text="+ Task" />
+               <Button fx:id="eventButton" mnemonicParsing="false" text="+ Event" />
+               <Button fx:id="openButton" mnemonicParsing="false" text="Open File" />
+               <Button fx:id="saveButton" mnemonicParsing="false" text="Save File" />
+           </buttons>
+         </ButtonBar>
+         <TextField fx:id="monthField" alignment="CENTER" layoutX="10.0" layoutY="82.0" prefHeight="50.0" prefWidth="228.0" promptText="Enter month">
+            <font>
+               <Font name="Futura Medium" size="24.0" />
+            </font>
+         </TextField>
+         <Text fx:id="weekOfTitle" layoutX="10.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Week Of: ">
+            <font>
+               <Font name="Futura Medium" size="18.0" />
+            </font>
+         </Text>
+         <TextField fx:id="weekOfField" layoutX="96.0" layoutY="144.0" promptText="Enter start day (ex. 6/19)">
+            <font>
+               <Font name="Futura Medium" size="13.0" />
+            </font></TextField>
+         <Button fx:id="taskQueueButton" layoutX="979.0" layoutY="263.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="117.0" rotate="90.0" text="Task Queue" />
+         <Button fx:id="commitmentWarning" layoutX="1008.0" layoutY="52.0" minHeight="-Infinity" minWidth="37.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="0.0" text="!" />
+         <Text fx:id="monthTitle" layoutX="10.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Month:">
+            <font>
+               <Font name="Futura Medium" size="18.0" />
+            </font>
+         </Text>
+         <VBox layoutX="433.0" layoutY="68.0" prefHeight="57.0" prefWidth="132.0">
+            <children>
+               <Text fx:id="progressBarTitle" strokeType="OUTSIDE" strokeWidth="0.0" text="Progress for: ">
+                  <font>
+                     <Font name="Futura Medium" size="18.0" />
+                  </font>
+               </Text>
+               <TextField promptText="Enter a day">
+                  <font>
+                     <Font name="Futura Medium" size="14.0" />
+                  </font></TextField>
+            </children>
+         </VBox>
+         <VBox layoutX="576.0" layoutY="70.0" prefHeight="133.0" prefWidth="100.0">
+            <children>
+               <Text fx:id="sortTitle" strokeType="OUTSIDE" strokeWidth="0.0" text="Sort by:" wrappingWidth="86.01861572265625">
+                  <font>
+                     <Font name="Futura Medium" size="17.0" />
+                  </font>
+               </Text>
+               <RadioButton fx:id="nameRadioButton" mnemonicParsing="false" text="Name">
+                  <font>
+                     <Font size="12.0" />
+                  </font>
+                  <toggleGroup>
+                     <ToggleGroup fx:id="nOrD" />
+                  </toggleGroup>
+               </RadioButton>
+               <RadioButton fx:id="durationRadioButton" mnemonicParsing="false" text="Duration" toggleGroup="$nOrD">
+                  <font>
+                     <Font size="12.0" />
+                  </font>
+               </RadioButton>
+            </children>
+         </VBox>
+         <Rectangle fx:id="monBox" arcHeight="5.0" arcWidth="5.0" fill="#ffcdc2" height="363.0" layoutY="209.0" stroke="BLACK" strokeType="INSIDE" width="145.0" />
+         <Rectangle fx:id="tueBox" arcHeight="5.0" arcWidth="5.0" fill="#ffe1c4" height="363.0" layoutX="138.0" layoutY="209.0" stroke="BLACK" strokeType="INSIDE" width="157.0" />
+         <Rectangle fx:id="wedBox" arcHeight="5.0" arcWidth="5.0" fill="#fffdc4" height="363.0" layoutX="288.0" layoutY="209.0" stroke="BLACK" strokeType="INSIDE" width="157.0" />
+         <Rectangle fx:id="thuBox" arcHeight="5.0" arcWidth="5.0" fill="#d2ffc4" height="363.0" layoutX="438.0" layoutY="209.0" stroke="BLACK" strokeType="INSIDE" width="157.0" />
+         <Rectangle fx:id="friBox" arcHeight="5.0" arcWidth="5.0" fill="#b0d2ff" height="363.0" layoutX="585.0" layoutY="209.0" stroke="BLACK" strokeType="INSIDE" width="141.0" />
+         <Rectangle fx:id="satBox" arcHeight="5.0" arcWidth="5.0" fill="#dcaaff" height="363.0" layoutX="725.0" layoutY="209.0" stroke="BLACK" strokeType="INSIDE" width="142.0" />
+         <Rectangle fx:id="sunBox" arcHeight="5.0" arcWidth="5.0" fill="#ffc4ea" height="363.0" layoutX="866.0" layoutY="209.0" stroke="BLACK" strokeType="INSIDE" width="138.0" />
+         <HBox layoutX="4.0" layoutY="213.0" prefHeight="360.0" prefWidth="1041.0">
+            <children>
+               <VBox fx:id="monday" prefHeight="328.0" prefWidth="138.0">
+                  <children>
+                     <Text fx:id="monTitle" strokeType="OUTSIDE" strokeWidth="0.0" text="Monday" wrappingWidth="77.0703125">
+                        <font>
+                           <Font name="Futura Medium" size="20.0" />
+                        </font>
+                     </Text>
+                  </children>
+               </VBox>
+               <VBox fx:id="tuesday" prefHeight="328.0" prefWidth="149.0">
+                  <children>
+                     <Text fx:id="tueTitle" strokeType="OUTSIDE" strokeWidth="0.0" text="Tuesday" textAlignment="CENTER">
+                        <font>
+                           <Font name="Futura Medium" size="20.0" />
+                        </font>
+                     </Text>
+                  </children>
+               </VBox>
+               <VBox fx:id="wednesday" prefHeight="328.0" prefWidth="151.0">
+                  <children>
+                     <Text fx:id="wedTitle" strokeType="OUTSIDE" strokeWidth="0.0" text="Wednesday" textAlignment="CENTER">
+                        <font>
+                           <Font name="Futura Medium" size="20.0" />
+                        </font>
+                     </Text>
+                  </children>
+               </VBox>
+               <VBox fx:id="thursday" prefHeight="360.0" prefWidth="149.0">
+                  <children>
+                     <Text fx:id="thuTitle" strokeType="OUTSIDE" strokeWidth="0.0" text="Thursday" textAlignment="CENTER">
+                        <font>
+                           <Font name="Futura Medium" size="20.0" />
+                        </font>
+                     </Text>
+                  </children>
+               </VBox>
+               <VBox fx:id="friday" prefHeight="360.0" prefWidth="137.0">
+                  <children>
+                     <Text fx:id="friTitle" strokeType="OUTSIDE" strokeWidth="0.0" text="Friday" textAlignment="CENTER">
+                        <font>
+                           <Font name="Futura Medium" size="20.0" />
+                        </font>
+                     </Text>
+                  </children>
+               </VBox>
+               <VBox fx:id="saturday" prefHeight="328.0" prefWidth="142.0">
+                  <children>
+                     <Text fx:id="satTitle" strokeType="OUTSIDE" strokeWidth="0.0" text="Saturday" textAlignment="CENTER">
+                        <font>
+                           <Font name="Futura Medium" size="20.0" />
+                        </font>
+                     </Text>
+                  </children>
+               </VBox>
+               <VBox fx:id="sunday" prefHeight="360.0" prefWidth="137.0">
+                  <children>
+                     <Text fx:id="sunTitle" strokeType="OUTSIDE" strokeWidth="0.0" text="Sunday" textAlignment="CENTER">
+                        <font>
+                           <Font name="Futura Medium" size="20.0" />
+                        </font>
+                     </Text>
+                  </children>
+               </VBox>
+            </children>
+         </HBox>
+         <VBox layoutX="658.0" layoutY="74.0" prefHeight="108.0" prefWidth="172.0">
+            <children>
+               <Text fx:id="eventMaxNumTitle" strokeType="OUTSIDE" strokeWidth="0.0" text="Maximum Number of Events:">
+                  <font>
+                     <Font name="Futura Medium" size="13.0" />
+                  </font>
+               </Text>
+               <TextField fx:id="commitEventField" promptText="Enter number of events" />
+               <Text fx:id="taskMaxNumTitle" strokeType="OUTSIDE" strokeWidth="0.0" text="Maximum Number of Tasks:">
+                  <font>
+                     <Font name="Futura Medium" size="13.0" />
+                  </font>
+               </Text>
+               <TextField fx:id="commitTaskField" promptText="Enter number of tasks" />
+            </children>
+         </VBox>
+         <VBox layoutX="434.0" layoutY="131.0" prefHeight="44.0" prefWidth="132.0">
+            <children>
+               <ProgressBar prefHeight="20.0" prefWidth="131.0" progress="0.0" />
+            </children>
+         </VBox>
+      </children></AnchorPane>
+</Scene>

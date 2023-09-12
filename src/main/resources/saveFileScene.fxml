@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Scene?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Scene fx:id="saveFileScene" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <AnchorPane prefHeight="200" prefWidth="200">
+      <children>
+         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fff1cf" height="200.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+         <Canvas height="200.0" width="200.0" />
+         <Text fx:id="saveTitle" layoutX="79.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Save">
+            <font>
+               <Font name="Futura Medium" size="16.0" />
+            </font>
+         </Text>
+         <Text fx:id="nameOfFile" layoutX="5.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Absolute Path:" wrappingWidth="65.93449401855469">
+            <font>
+               <Font name="Futura Medium" size="13.0" />
+            </font>
+         </Text>
+         <TextField fx:id="savePath" layoutX="59.0" layoutY="88.0" prefHeight="26.0" prefWidth="132.0" promptText="Enter the file path..." />
+      </children></AnchorPane>
+</Scene>

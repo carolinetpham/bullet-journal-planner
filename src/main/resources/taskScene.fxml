@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Scene?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Scene fx:id="taskScene" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="163.0" prefWidth="193.0">
+      <children>
+         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffdefd" height="163.0" stroke="BLACK" strokeType="INSIDE" width="193.0" />
+         <Canvas height="171.0" width="195.0" />
+         <Text fx:id="nameTitle" layoutX="3.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name*:">
+            <font>
+               <Font name="Futura Medium" size="10.0" />
+            </font>
+         </Text>
+         <Text fx:id="descriptionTitle" layoutX="3.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description: ">
+            <font>
+               <Font name="Futura Medium" size="10.0" />
+            </font>
+         </Text>
+         <VBox layoutX="48.0" layoutY="6.0" prefHeight="22.0" prefWidth="99.0">
+            <children>
+               <Text fx:id="newTaskTitle" strokeType="OUTSIDE" strokeWidth="0.0" text="Create New Task" textAlignment="CENTER">
+                  <font>
+                     <Font name="Futura Medium" size="13.0" />
+                  </font>
+               </Text>
+            </children>
+         </VBox>
+         <VBox layoutX="42.0" layoutY="28.0" prefHeight="29.0" prefWidth="128.0">
+            <children>
+               <TextField fx:id="nameTextField" prefHeight="26.0" prefWidth="108.0" promptText="Enter a name..." />
+            </children>
+         </VBox>
+         <VBox layoutX="58.0" layoutY="60.0" prefHeight="29.0" prefWidth="129.0">
+            <children>
+               <TextField fx:id="descriptionTextField" prefHeight="29.0" prefWidth="124.0" promptText="Enter a description" />
+            </children>
+         </VBox>
+         <VBox layoutX="56.0" layoutY="130.0" prefHeight="31.0" prefWidth="74.0" />
+         <Text fx:id="dayTaskTitle" layoutX="3.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Day:">
+            <font>
+               <Font name="Futura Medium" size="10.0" />
+            </font>
+         </Text>
+         <TextField fx:id="taskDayField" layoutX="27.0" layoutY="105.0" prefHeight="26.0" prefWidth="98.0" promptText="Enter the day" />
+      </children></AnchorPane>
+</Scene>

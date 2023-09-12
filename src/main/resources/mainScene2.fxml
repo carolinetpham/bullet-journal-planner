@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Scene?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Scene fx:id="mainScene" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="571.0" prefWidth="1006.0">
+      <children>
+         <Canvas height="600.0" layoutX="-132.0" layoutY="-29.0" width="1125.0" />
+         <VBox fx:id="Monday" layoutX="5.0" layoutY="300.0" prefHeight="200.0" prefWidth="100.0">
+            <children>
+               <Rectangle fx:id="monBox" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="255.0" stroke="BLACK" strokeType="INSIDE" width="129.0" />
+            </children>
+         </VBox>
+         <VBox fx:id="Tuesday" layoutX="140.0" layoutY="300.0" prefHeight="200.0" prefWidth="100.0">
+            <children>
+               <Rectangle fx:id="tueBox" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="255.0" stroke="BLACK" strokeType="INSIDE" width="129.0" />
+            </children>
+         </VBox>
+         <VBox fx:id="Wednesday" layoutX="274.0" layoutY="300.0" prefHeight="200.0" prefWidth="100.0">
+            <children>
+               <Rectangle fx:id="wedBox" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="255.0" stroke="BLACK" strokeType="INSIDE" width="129.0" />
+            </children>
+         </VBox>
+         <VBox fx:id="Thursday" layoutX="408.0" layoutY="300.0" prefHeight="200.0" prefWidth="100.0">
+            <children>
+               <Rectangle fx:id="thuBox" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="255.0" stroke="BLACK" strokeType="INSIDE" width="129.0" />
+            </children>
+         </VBox>
+         <VBox fx:id="Friday" layoutX="542.0" layoutY="300.0" prefHeight="200.0" prefWidth="100.0">
+            <children>
+               <Rectangle fx:id="friBox" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="255.0" stroke="BLACK" strokeType="INSIDE" width="129.0" />
+            </children>
+         </VBox>
+         <VBox fx:id="Saturday" layoutX="676.0" layoutY="300.0" prefHeight="200.0" prefWidth="100.0">
+            <children>
+               <Rectangle fx:id="satBox" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="255.0" stroke="BLACK" strokeType="INSIDE" width="129.0" />
+            </children>
+         </VBox>
+         <VBox fx:id="Sunday" layoutX="810.0" layoutY="300.0" prefHeight="200.0" prefWidth="100.0">
+            <children>
+               <Rectangle fx:id="sunBox" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="255.0" stroke="BLACK" strokeType="INSIDE" width="129.0" />
+            </children>
+         </VBox>
+         <Text fx:id="monTitle" layoutX="35.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Monday" textAlignment="CENTER">
+            <font>
+               <Font name="Futura Medium" size="20.0" />
+            </font>
+         </Text>
+         <Text fx:id="tueTitle" layoutX="164.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tuesday" textAlignment="CENTER">
+            <font>
+               <Font name="Futura Medium" size="20.0" />
+            </font>
+         </Text>
+         <Text fx:id="wedTitle" layoutX="285.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wednesday" textAlignment="CENTER">
+            <font>
+               <Font name="Futura Medium" size="20.0" />
+            </font>
+         </Text>
+         <Text fx:id="thuTitle" layoutX="430.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thursday" textAlignment="CENTER">
+            <font>
+               <Font name="Futura Medium" size="20.0" />
+            </font>
+         </Text>
+         <Text fx:id="friTitle" layoutX="580.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Friday" textAlignment="CENTER">
+            <font>
+               <Font name="Futura Medium" size="20.0" />
+            </font>
+         </Text>
+         <Text fx:id="satTitle" layoutX="700.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Saturday" textAlignment="CENTER">
+            <font>
+               <Font name="Futura Medium" size="20.0" />
+            </font>
+         </Text>
+         <Text fx:id="sunTitle" layoutX="838.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sunday" textAlignment="CENTER">
+            <font>
+               <Font name="Futura Medium" size="20.0" />
+            </font>
+         </Text>
+         <ButtonBar fx:id="taskBar" layoutX="205.0" layoutY="4.0" prefHeight="40.0" prefWidth="792.0">
+           <buttons>
+               <RadioButton fx:id="themeButton" mnemonicParsing="false" text="Themes" />
+               <Button fx:id="taskButton" mnemonicParsing="false" text="+ Task" />
+               <Button fx:id="eventButton" mnemonicParsing="false" prefHeight="31.0" prefWidth="128.0" text="+ Event" />
+               <Button fx:id="openButton" mnemonicParsing="false" text="Open File" />
+               <Button fx:id="saveButton" mnemonicParsing="false" text="Save File" />
+           </buttons>
+         </ButtonBar>
+         <TextField fx:id="monthField" layoutX="9.0" layoutY="3.0" prefHeight="75.0" prefWidth="228.0" />
+         <Text fx:id="weekOfTitle" layoutX="14.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Week Of: ">
+            <font>
+               <Font name="Futura Medium" size="18.0" />
+            </font>
+         </Text>
+         <TextField fx:id="weekOfField" layoutX="101.0" layoutY="83.0" />
+         <Button fx:id="taskQueueButton" layoutX="921.0" layoutY="263.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="117.0" rotate="90.0" text="Task Queue" />
+         <Text fx:id="progressBarTitle" layoutX="10.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Progress for ">
+            <font>
+               <Font name="Futura Medium" size="17.0" />
+            </font>
+         </Text>
+         <Text fx:id="sortTitle" layoutX="257.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sort">
+            <font>
+               <Font name="Futura Medium" size="17.0" />
+            </font>
+         </Text>
+         <Text fx:id="byTitle" layoutX="387.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="by">
+            <font>
+               <Font name="Futura Medium" size="17.0" />
+            </font>
+         </Text>
+         <Button fx:id="commitmentWarning" layoutX="943.0" layoutY="57.0" minHeight="-Infinity" minWidth="37.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="0.0" text="!" textFill="WHITE" />
+      </children></AnchorPane>
+</Scene>
