@@ -1,6 +1,6 @@
 Java Journal!
 This bullet journal program allows you to write and save task and events for a week.
-You can save these to a file for later. This journa also supports adding a limit for how many
+You can save these to a file for later. This journal also supports adding a limit for how many
 tasks you can have in a day. This is a great way to keep track of your tasks and events for the week!
 
 GUI:
